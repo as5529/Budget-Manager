@@ -14,13 +14,15 @@ const IncomeForm = ({setIncome}) => {
     return (
         <form onSubmit={handleSubmit} style={{ marginBottom : '20px'}}>
             <h3>Add Your Monthly Income</h3>
-            <input>
-            type="number"
-            value={amount}
-            onchange={(e) => setAmount(e.target.value)}
-            placeholder="e.g. 10000"
-            required
-            </input>
+            <input
+        type="number"
+        value={amount}
+        onChange={(e) => setAmount(e.target.value)}
+        placeholder="e.g. 10000"
+        required
+      />
+      <button type="Submit">Add Income</button>
+
         </form>
     );
 };
